@@ -1,0 +1,107 @@
+
+
+html {
+    background-color: lightblue;
+    color: green;
+}
+
+header {
+    display: block;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 10px darkblue;
+}
+
+header > * {
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+header > h1 {
+    font-size: 300%;
+    color: darkblue;
+}
+
+header > h2 {
+    font-size: 200%;
+    color: darkolivegreen;
+}
+
+
+
+body div {
+    text-align: center;
+    border: solid 5px black;
+    margin: 15px;
+    margin-top: 40px;
+    padding: 15px;
+}
+
+body div h2 {
+    position: relative;
+    bottom: 40px;
+    background-color: whitesmoke;
+    border: solid 3px black;
+    padding: 12px;
+    margin: 3px;
+    font-size: 150%;
+}
+
+body div h3 {
+    position: relative;
+    bottom: 20px;
+    background-color: lightgray;
+    border: solid 3px gray;
+    padding: 10px;
+    margin: 10px;
+    font-size: 120%;
+}
+
+body div pre {
+    font-family: monospace;
+    text-align: left;
+    color: white;
+    background-color: black;
+    border: solid 3px green;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: 10px;
+    font-size: 120%;
+}
+
+
+body > * {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+
+
+@media screen and (max-width: 10000px) {
+    body div {
+        flex-basis: 30%
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body div {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body div {
+        flex-basis: 100%;
+    }
+}
